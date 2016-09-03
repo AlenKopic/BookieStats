@@ -1,0 +1,13 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Assets.at(path="/public", file="app/index.html")
+
+GET     /api/teams                  controllers.Teams.list
+PATCH   /api/teams/:id              controllers.Teams.update(id: String)
+POST    /api/team                   controllers.Teams.add
+DELETE  /api/team/:id               controllers.Teams.delete(id : String)
+
+GET     /*file                      controllers.Assets.at(path="/public", file)
