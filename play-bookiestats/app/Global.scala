@@ -20,7 +20,7 @@ class Global @Inject() (
       "location" -> "Rome"
     ),
     Json.obj(
-      "name" -> "AS JUVENTUS",
+      "name" -> "JUVENTUS FC",
       "location" -> "Torino"
     )
   )
